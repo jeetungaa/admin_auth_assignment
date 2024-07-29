@@ -27,7 +27,7 @@ const AddCategory = () => {
         e.preventDefault();
 
         console.log('Category submitted: ', category);
-        const send=await fetch('http://localhost:3000/categories',{
+        const send=await fetch('https://admin-auth-assignment.onrender.com/categories',{
             method:'post',
             headers:{
                 'Content-type':'application/json',

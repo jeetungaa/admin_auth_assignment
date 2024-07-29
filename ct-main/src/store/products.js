@@ -3,7 +3,7 @@ import { selector } from "recoil";
 export const products=selector({
     key:'products',
     get:async ({get})=>{
-        const res = await fetch('http://localhost:3000/products/',{
+        const res = await fetch('https://admin-auth-assignment.onrender.com/products/',{
             headers:{
                 'authorization':localStorage.getItem('token')
             }
@@ -16,7 +16,7 @@ export const products=selector({
 export const categories=selector({
     key:'category',
     get:async ({get})=>{
-        const res = await fetch('http://localhost:3000/categories/',{
+        const res = await fetch('https://admin-auth-assignment.onrender.com/categories/',{
             headers:{
                 'authorization':localStorage.getItem('token')
             }

@@ -25,7 +25,7 @@ const AddProduct = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         console.log('Product submitted: ', product);
-        const send=await fetch('http://localhost:3000/products/add',{
+        const send=await fetch('https://admin-auth-assignment.onrender.com/products/add',{
             method:'post',
             headers:{
                 'Content-type':'application/json',

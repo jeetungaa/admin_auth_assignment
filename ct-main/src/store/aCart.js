@@ -8,7 +8,7 @@ export const cartState = atom({
 export const getCart = selector({
     key: 'getCart',
     get: async ({ get }) => {
-        const req = await fetch('http://localhost:3000/products/cart', {
+        const req = await fetch('https://admin-auth-assignment.onrender.com/products/cart', {
             headers: {
                 'authorization': localStorage.getItem('token')
             }
@@ -22,7 +22,7 @@ export const cartUpdate = selector({
     key: 'Update',
     get: async ({ get }) => {
         const list = get(cartState);
-        const req = await fetch('http://localhost:3000/products/cart', {
+        const req = await fetch('https://admin-auth-assignment.onrender.com/products/cart', {
             method: 'post',
             headers: {
                 'Content-type': 'application/json',

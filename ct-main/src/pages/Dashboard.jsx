@@ -37,7 +37,7 @@ export const Dashboard = () => {
     console.log(data);
 
     const handelDelete=async ()=>{
-        const req=await fetch('http://localhost:3000/user/del',{
+        const req=await fetch('https://admin-auth-assignment.onrender.com/user/del',{
             headers:{
                 'authorization':localStorage.getItem('token')
             },

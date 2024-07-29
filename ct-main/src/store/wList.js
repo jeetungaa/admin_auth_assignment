@@ -8,7 +8,7 @@ export const wishListState = atom({
 export const getWList = selector({
     key: 'getList',
     get: async ({ get }) => {
-        const req = await fetch('http://localhost:3000/products/wish', {
+        const req = await fetch('https://admin-auth-assignment.onrender.com/products/wish', {
             headers: {
                 'authorization': localStorage.getItem('token')
             }
@@ -22,7 +22,7 @@ export const wList = selector({
     key: 'active',
     get: async ({ get }) => {
         const list = get(wishListState);
-        const req = await fetch('http://localhost:3000/products/wish', {
+        const req = await fetch('https://admin-auth-assignment.onrender.com/products/wish', {
             method: 'post',
             headers: {
                 'Content-type': 'application/json',

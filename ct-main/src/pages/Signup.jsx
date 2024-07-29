@@ -71,7 +71,7 @@ export const Signup = () => {
                 password,
                 role
             }
-            const req = await fetch('http://localhost:3000/user/signup', {
+            const req = await fetch('https://admin-auth-assignment.onrender.com/user/signup', {
                 method: 'post',
                 headers: {
                     'Content-type': 'application/json'

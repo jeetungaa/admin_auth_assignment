@@ -60,7 +60,7 @@ export const EditItem = () => {
         if (itemType === 'product') {
             console.log('Product edited: ', { ...item, ...eitem });
             try{
-            const req=await fetch("http://localhost:3000/products/",{
+            const req=await fetch("https://admin-auth-assignment.onrender.com/products/",{
                 method:'put',
             headers:{
                 'Content-type':'application/json',
@@ -77,7 +77,7 @@ export const EditItem = () => {
     } else {
             console.log('Category edited: ', { ...item, ...itemC });
             try{
-            const req= await fetch('http://localhost:3000/categories',{
+            const req= await fetch('https://admin-auth-assignment.onrender.com/categories',{
                 method:'put',
                 headers:{
                     'Content-type':'application/json',

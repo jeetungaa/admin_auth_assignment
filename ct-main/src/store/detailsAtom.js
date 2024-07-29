@@ -4,7 +4,7 @@ export const detailsSelector = selector({
     key: 'detailsSelector',
     get: async ({ get }) => {
         try {
-            const res = await fetch('http://localhost:3000/data', {
+            const res = await fetch('https://admin-auth-assignment.onrender.com/data', {
                 method: 'POST',
                 headers: {
                     'Content-type': 'application/json',
