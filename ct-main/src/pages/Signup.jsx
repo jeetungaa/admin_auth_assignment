@@ -71,7 +71,7 @@ export const Signup = () => {
                 password,
                 role
             }
-            const req = await fetch('https://admin-auth-assignment.onrender.com/user/signup', {
+            const req = await fetch('https://admin-authassignment.vercel.app/user/signup', {
                 method: 'post',
                 headers: {
                     'Content-type': 'application/json'

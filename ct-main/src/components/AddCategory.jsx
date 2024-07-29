@@ -27,7 +27,7 @@ const AddCategory = () => {
         e.preventDefault();
 
         console.log('Category submitted: ', category);
-        const send=await fetch('https://admin-auth-assignment.onrender.com/categories',{
+        const send=await fetch('https://admin-authassignment.vercel.app/categories',{
             method:'post',
             headers:{
                 'Content-type':'application/json',

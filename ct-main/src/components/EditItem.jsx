@@ -60,7 +60,7 @@ export const EditItem = () => {
         if (itemType === 'product') {
             console.log('Product edited: ', { ...item, ...eitem });
             try{
-            const req=await fetch("https://admin-auth-assignment.onrender.com/products/",{
+            const req=await fetch("https://admin-authassignment.vercel.app/products/",{
                 method:'put',
             headers:{
                 'Content-type':'application/json',
@@ -77,7 +77,7 @@ export const EditItem = () => {
     } else {
             console.log('Category edited: ', { ...item, ...itemC });
             try{
-            const req= await fetch('https://admin-auth-assignment.onrender.com/categories',{
+            const req= await fetch('https://admin-authassignment.vercel.app/categories',{
                 method:'put',
                 headers:{
                     'Content-type':'application/json',

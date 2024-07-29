@@ -10,7 +10,7 @@ export const authCheck = selector({
     get: async ({ get }) => {
         try {
             // const status = get(auth);
-            const res = await fetch('https://admin-auth-assignment.onrender.com/user/auth',{
+            const res = await fetch('https://admin-authassignment.vercel.app/user/auth',{
                 method:'post',
                 headers:{
                     'Content-type': 'application/json',

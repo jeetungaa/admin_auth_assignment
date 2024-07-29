@@ -39,5 +39,5 @@ app.post('/data',async (req,res)=>{
 
 const PORT = process.env.PORT || 10000;
 app.listen(PORT,()=>{
-    console.log('listening on https://admin-auth-assignment.onrender.com')
+    console.log('listening on admin-authassignment.vercel.app')
 })

@@ -3,7 +3,7 @@ import { selector } from "recoil";
 export const products=selector({
     key:'products',
     get:async ({get})=>{
-        const res = await fetch('https://admin-auth-assignment.onrender.com/products/',{
+        const res = await fetch('https://admin-authassignment.vercel.app/products/',{
             headers:{
                 'authorization':localStorage.getItem('token')
             }
@@ -16,7 +16,7 @@ export const products=selector({
 export const categories=selector({
     key:'category',
     get:async ({get})=>{
-        const res = await fetch('https://admin-auth-assignment.onrender.com/categories/',{
+        const res = await fetch('https://admin-authassignment.vercel.app/categories/',{
             headers:{
                 'authorization':localStorage.getItem('token')
             }
