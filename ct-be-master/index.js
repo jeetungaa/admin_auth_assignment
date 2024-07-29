@@ -32,7 +32,7 @@ app.post('/data',async (req,res)=>{
 })
 
 
-
-app.listen(3000,()=>{
+const PORT = process.env.PORT || 10000;
+app.listen(PORT,()=>{
     console.log('listening on https://admin-auth-assignment.onrender.com')
 })
