@@ -1,5 +1,12 @@
 {
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node index.js",
+    "build": "npm i",
+    "prod": "NODE_ENV=production nodemon server.js"
+  },
   "dependencies": {
+    "build": "^0.1.4",
     "cors": "^2.8.5",
     "express": "^4.19.2",
     "jsonwebtoken": "^9.0.2",
